@@ -81,7 +81,7 @@ def dict2xml(dict, encoding="utf-8", pretty=False):
 
     if pretty:
         xml_pretty_string = minidom.parseString(xml_string)
-        return xml_pretty_string.toprettyxml().decode(encoding)
+        return xml_pretty_string.toprettyxml()
     else:
         return xml_string.decode(encoding)
 
